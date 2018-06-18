@@ -3,20 +3,117 @@
 <head>
   <meta charset="utf-8">
   <title>ecommerce site</title>
+  <link rel="stylesheet" href="./style/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <!-- product section of homepage -->
 
+<!-- FOOTER -->
+  <footer class="page-footer font-small blue-grey lighten-5 mt-4">
+<!--ROW SIGNUP  -->
+    <div style="background-color: #21d192;">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-12 text-center">
+            <h3 class="mb-0">Signup Today!</h3>
+            <h4>Here is why you should sign up and we should add great reasons!</h4>
+            <form class="" action="index.html" method="post">
+              <input type="email" name="email" value="" placeholder="yourname@website.com">
+              <input type="submit" name="email" value="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ROW WITH 4 COLUMNS -->
+    <div class="container text-center text-md-left mt-5">
+      <div class="row mt-3 dark-grey-text">
+<!-- COL VISIT US -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+          <h5 class="text-uppercase font-weight-bold">Visit Us!</h5>
+          <h6>We are located in historic Pioneer Square!</h6>
+          <div id="map"></div>
+        </div>
+<!-- COL ON SALE -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">On Sale!</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Portal Gun</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Pickle Rick</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">1 Day Pass at Froopy Land/a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Snuffles' robot gear</a>
+          </p>
+        </div>
+<!-- COL MORE INFO -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">More Info</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Interdimensional Orders</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Portal Gun Safety</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Froopy Land Rules</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Returns - only accepted from Earth</a>
+          </p>
+        </div>
+  <!-- COL CONTACT-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i>Seattle, US, Earth</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i>RickandMortySales@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 0011 01 253 777 6655</p>
 
-
+        </div>
+      </div>
+    </div>
+<!-- ROW COPYRIGHT -->
+    <div style="background-color: #21d192;">
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-12 text-center">
+            <h5>© 2018 Copyright:</h5>
+            <a class="dark-grey-text" href="https://google.com"> rickandmortygifts.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- THIS SCRIPT IS REQUIRED TO BE IN THE HTML FILE FOR THE GOOGLE MAP TO RUN CORRECTLY -->
+<!-- I WILL FIND A WAY TO PUT IT IN A JS FILE BC THIS IS UGLY -->
+<script type="text/javascript">
+function initMap() {
+  let uluru = {lat: 47.598, lng: -122.333};
+  let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  let marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script type="text/javascript" href="/bundle.js">
   </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Nm8zR8jHraieLeKRLxzmQZOE4FPqsPo&callback=initMap"></script>
 </body>
 
 </html>
