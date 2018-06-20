@@ -1,4 +1,6 @@
+const toggleAddCart = require ("./product-to-cart.js")
 
+toggleAddCart();
 
 const emailInput = document.querySelector('.email-input')
 const emailForm = document.querySelector('.email-form')
@@ -15,3 +17,6 @@ submitButton.addEventListener('click', function(event) {
       alert('Thank you for signing up!')
     }
 })
+
+
+
