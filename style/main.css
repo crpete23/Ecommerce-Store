@@ -37,3 +37,76 @@ footer {
     0% { left: -5px; }
     100% { right: -5px; }
 }
+/* products section */
+
+.product-img {
+  width: 100%;
+  /* min-width: 80px; */
+}
+
+.product-title {
+  font-size: 19px;
+}
+
+.reviews span {
+  color: limeGreen;
+}
+
+
+img.morty-review {
+  width: 20px;
+}
+
+img.morty-half {
+  width: 10px;
+}
+
+.visible {
+  width: 100%;
+  cursor: pointer;
+  background-color: #C41230;
+  text-transform: uppercase;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  /* opacity: 0.8; */
+  transition: opacity 0.5s ease-in-out;
+  bottom: 5px;
+  opacity: 0.8;
+  position: relative;
+}
+
+.hidden {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.products .product-img .visible a, .products .product-img .visible a:visited, .products .product-img .visible a:active, .products .product-img .visible a:hover {
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+.visible:hover {
+  opacity: 1;
+}
+
+.products p {
+  margin-bottom: 10px;
+}
+
+.products p span {
+  font-weight: bold;
+}
+
+.products .ratings .reviews span {
+  color: #188aae;
+}
+
+.product-img img {
+  width: 100%;
+  padding: 15%;
+}
+
+img.currency {
+  width: 28px;
+}
