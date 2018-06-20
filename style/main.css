@@ -15,7 +15,7 @@ height: 200px;
 }
 
 footer {
-  position: fixed;
+  position: relative;
   height: 610px;
   bottom: 0;
   width: 100%;
