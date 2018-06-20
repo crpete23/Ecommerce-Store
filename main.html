@@ -4,12 +4,99 @@
 <head>
   <meta charset="utf-8">
   <title>ecommerce site</title>
+  <link rel="stylesheet" href="./style/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="/styles/product-home.css">
 </head>
 
 <body>
+<!-- HEADER -->
+  <header>
+<!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./main.html">ECOMMERCE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- PRODUCT LISTING IN NAV BAR-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Rick<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Morty</a>
+          </li>
+
+<!-- DROPDOWN ITEM -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./products.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Tech
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./products.html">Good</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./products.html">Evil</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">Sale</a>
+          </li>
+        </ul>
+<!-- STATIC SHOPPING CART IMG --->
+        <a class="btn btn-success btn-sm ml-3" href="./main.html">
+                     <i class="fa fa-shopping-cart"></i> Cart
+                     <span class="badge badge-light">3</span>
+        </a>
+      </div>
+    </nav>
+</header>
+
+
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+          <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+          <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+          <!--First slide-->
+          <div class="carousel-item active">
+              <img class="d-block w-100" src="./img/battery.png" alt="First slide" height="200" width ="200">
+          </div>
+          <!--/First slide-->
+          <!--Second slide-->
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/butter-robot.png" alt="Second slide" height="200" width ="200">
+          </div>
+          <!--/Second slide-->
+          <!--Third slide-->
+          <div class="carousel-item">
+              <img class="d-block w-100" src="./img/cable.png" alt="Third slide" height="200" width="200">
+          </div>
+          <!--/Third slide-->
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+
 
   <!-- product section of homepage -->
   <div class="container">
@@ -150,11 +237,115 @@
     </section>
   </div>
 
+
+
+
+
+<!-- FOOTER -->
+
+  <footer class="page-footer font-small blue-grey lighten-5 mt-4">
+<!--ROW SIGNUP  -->
+    <div style="background-color: #21d192;">
+      <div class="container">
+        <div class="row py-4 d-flex align-items-center">
+          <div class="col-12 text-center">
+            <h3 class="mb-0">Signup Today!</h3>
+            <h4>Here is why you should sign up and we should add great reasons!</h4>
+            <form class="email-form" action="index.html" method="post">
+              <input class="email-input" type="email" name="email" value="" placeholder="yourname@website.com" required>
+              <input class="submit-button" type="submit" name="email" value="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ROW WITH 4 COLUMNS -->
+    <div class="container text-center text-md-left mt-5">
+      <div class="row mt-3 dark-grey-text">
+<!-- COL VISIT US -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+          <h5 class="text-uppercase font-weight-bold">Visit Us!</h5>
+          <h6>We are located in historic Pioneer Square!</h6>
+          <div id="map"></div>
+        </div>
+<!-- COL ON SALE -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">On Sale!</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Portal Gun</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Pickle Rick</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">1 Day Pass at Froopy Land/a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Snuffles' robot gear</a>
+          </p>
+        </div>
+<!-- COL MORE INFO -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase font-weight-bold">More Info</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="dark-grey-text" href="#!">Interdimensional Orders</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Portal Gun Safety</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Froopy Land Rules</a>
+          </p>
+          <p>
+            <a class="dark-grey-text" href="#!">Returns - only accepted from Earth</a>
+          </p>
+        </div>
+  <!-- COL CONTACT-->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+          <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i>Seattle, US, Earth</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i>RickandMortySales@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> + 0011 01 253 777 6655</p>
+
+        </div>
+      </div>
+    </div>
+<!-- ROW COPYRIGHT -->
+    <div style="background-color: #21d192;">
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-12 text-center">
+            <h5>© 2018 Copyright:</h5>
+            <a class="dark-grey-text" href="https://google.com"> rickandmortygifts.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- THIS SCRIPT IS REQUIRED TO BE IN THE HTML FILE FOR THE GOOGLE MAP TO RUN CORRECTLY -->
+<!-- I WILL FIND A WAY TO PUT IT IN A JS FILE BC THIS IS UGLY -->
+<script type="text/javascript">
+function initMap() {
+  let uluru = {lat: 47.598, lng: -122.333};
+  let map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  let marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/bundle.js">
   </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7Nm8zR8jHraieLeKRLxzmQZOE4FPqsPo&callback=initMap"></script>
 </body>
 
 </html>
