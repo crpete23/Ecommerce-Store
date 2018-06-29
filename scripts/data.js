@@ -4,7 +4,7 @@
 const products = [
   { title: '1 Interdimensional Cable Box', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews' , class: 'rick techgood' },
   { title: '2 Portal Gun', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews', class: 'rick techgood techevil' },
-  { title: '3 Pickle Rick Replica', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews' class: 'rick'},
+  { title: '3 Pickle Rick Replica', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews', class: 'rick'},
   { title: '4 Szechuan Sauce', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews', class: 'rick'},
   { title: `5 Rick's favorite beer`, image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews', class: 'rick' },
   { title: '6 Morty Jr', image: "https://vignette.wikia.nocookie.net/rickandmorty/images/2/27/Interdimensional_Cable_Box.png/revision/latest?cb=20160910005523", price: '$100', mortys: '5 mortys', reviews: '10 reviews', class: 'morty' },
