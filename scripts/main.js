@@ -52,5 +52,6 @@ function renderFilteredProducts(products){
      }
   }
 }
+
 renderFilteredProducts(data)
 //this is the render function call where we want to pass in our filtered array
