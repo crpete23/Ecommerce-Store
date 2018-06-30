@@ -3,20 +3,9 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
-footer {
-  position: fixed;
-  height: 460px;
-  bottom: 0;
-  width: 100%;
-}
-
 #map {
   height: 255px;
   width: 255px;
-}
-
-body {
-  height: 1300px;
 }
 
 header {
@@ -31,20 +20,14 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-#map {
-  height: 255px;
-  width: 255px;
-}
-
 /* product section */
 
-.product-img {
+.imgProd {
   width: 100%;
 }
 
 .product-title {
-  font-size: 19px;
+  font-size: 15px;
 }
 
 .reviews span {
@@ -74,12 +57,8 @@ img.morty-half {
   position: relative;
 }
 
-.hidden {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-}
 
-.products .product-img .visible a, .products .product-img .visible a:visited, .products .product-img .visible a:active, .products .product-img .visible a:hover {
+.products .imgProd .visible a, .products .imgProd .visible a:visited, .products .imgProd .visible a:active, .products .imgProd .visible a:hover {
   color: black;
   text-decoration: none;
 }
@@ -89,18 +68,14 @@ img.morty-half {
 }
 
 .products p {
-  margin-bottom: 10px;
-}
-
-.products p span {
-  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .products .ratings .reviews span {
-  color: black;
+  color: forestGreen;
 }
 
-.product-img img {
+.imgProd img {
   width: 100%;
   padding: 15%;
 }
@@ -123,10 +98,15 @@ img.currency {
 .filter-menu ul {
   border-top: 1px solid black;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .filter-menu h4 {
   text-transform: uppercase;
+}
+
+.filter-menu ul li a {
+  color: black;
 }
 
 .filter-menu ul li a:hover {
@@ -138,8 +118,9 @@ img.currency {
   margin-top: 50px;
 }
 
-.list-products .hidden {
-  display: none;
+.hidden {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .list-products .product {
@@ -150,15 +131,16 @@ img.currency {
   margin-bottom: 0;
 }
 
-.list-products .product-img {
+.list-products .imgProd {
   height: auto;
   width: 100%;
 }
 
-.list-products .product-img img {
-  height: 250px;
+.list-products .imgProd img {
+  height: 210px;
   width: 100%;
 }
+
 
 ul {
   list-style-type: none;

@@ -6,7 +6,7 @@ function populateProducts(product) {
 let productHtml =
 `<div class="col-3 products-page">
   <article>
-    <div class="product-img">
+    <div class="imgProd">
       <img src="${product.image}" alt="${product.title}" class="mb-2">
       <div class="hidden visible text-center">
         <a href="#">Add To Cart</a>
