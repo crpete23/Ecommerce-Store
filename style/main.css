@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 body {
-  height: 1300px;
+  font-family: 'Quicksand', sans-serif;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -8,9 +10,8 @@ header {
 }
 
 .carousel {
-width: 100%;
-height: 200px;
-
+  width: 100%;
+  height: 200px;
 }
 
 footer {
@@ -21,24 +22,28 @@ footer {
 }
 
 #map {
-    height: 255px;
-    width: 255px;
+  height: 255px;
+  width: 255px;
 }
 
-
 .shake-box {
-    position: relative;
-    animation: shake .1s linear;
-    animation-iteration-count: 3;
+  position: relative;
+  animation: shake .1s linear;
+  animation-iteration-count: 3;
 }
 
 @keyframes shake {
-    0% { left: -5px; }
-    100% { right: -5px; }
+  0% {
+    left: -5px;
+  }
+  100% {
+    right: -5px;
+  }
 }
 
 /* product section */
-.product-img {
+
+.imgProd {
   width: 100%;
 }
 
@@ -49,7 +54,6 @@ footer {
 .reviews span {
   color: limeGreen;
 }
-
 
 img.morty-review {
   width: 20px;
@@ -67,7 +71,6 @@ img.morty-half {
   padding: 10px;
   text-decoration: none;
   font-weight: 400;
-  /* opacity: 0.8; */
   transition: opacity 0.5s ease-in-out;
   bottom: 5px;
   opacity: 0.8;
@@ -79,7 +82,7 @@ img.morty-half {
   opacity: 0;
 }
 
-.products .product-img .visible a, .products .product-img .visible a:visited, .products .product-img .visible a:active, .products .product-img .visible a:hover {
+.products .imgProd .visible a, .products .imgProd .visible a:visited, .products .imgProd .visible a:active, .products .imgProd .visible a:hover {
   color: #EFEFEF;
   text-decoration: none;
 }
@@ -97,10 +100,10 @@ img.morty-half {
 }
 
 .products .ratings .reviews span {
-  color: #188aae;
+  color: teal;
 }
 
-.product-img img {
+.imgProd img {
   width: 100%;
   padding: 15%;
 }

@@ -1,6 +1,6 @@
-const toggleAddCart = require ("./product-to-cart.js")
+const toggleAddCart = require("./product-to-cart.js")
 const data = require('./data')
-const populateProducts = require('./templates')
+const templates = require('./templates')
 
 toggleAddCart();
 
@@ -8,31 +8,38 @@ const emailInput = document.querySelector('.email-input')
 const emailForm = document.querySelector('.email-form')
 const submitButton = document.querySelector('.submit-button')
 
+// products.html populate products on page
+const populate = require('./populate-products.js')
+populate.renderFilteredProducts(data)
+toggleAddCart();
 
-//So I had to disable the submit.addEventListener bc this element doesn't exist on the products page.
-//I couldn't get the below function to run from the new populate-products.js page. I am not good with browserify
-//and I think maybe our products.html page should not use it because we don't necessarily want the entire main.js
-//file running on our products.html page? Help haha.
-//
+// products.html (filter function)
+const links = Array.from(document.querySelectorAll('.list-products .sort ul li a'))
 
-//PRODUCT POPULATION FUNCTION USING TEMPLATE AND DATA
-function renderFilteredProducts(products){
-  let filteredProductsArray = products.map(populateProducts)
-  let productsDisplayTable = document.querySelector('.products-page-container')
-  let rowsAmount = Math.round(filteredProductsArray.length/3)
-  let counter = 0
-
-  for(let i = 0; i < rowsAmount; i++){
-    let row = document.createElement('row')
-    productsDisplayTable.append(row)
-    //adds row to page
-      for(let j = 0; j < 3; j++){
-        if(counter < filteredProductsArray.length){
-        let product = filteredProductsArray[counter]
-        row.innerHTML += product
-        counter ++
-        }
-     }
+links.map(el => el.addEventListener('click', function() {
+  const dataValue = el.dataset.category
+  switch (dataValue) {
+    case 'all':
+      populate.renderFilteredProducts(data)
+      toggleAddCart();
+      break;
+    case 'rick':
+      populate.renderRick(data)
+      toggleAddCart();
+      break;
+    case 'morty':
+      populate.renderMorty(data)
+      toggleAddCart();
+      break;
+    case 'tech':
+      populate.renderTech(data)
+      toggleAddCart();
+      break;
+    case 'sale':
+      populate.renderSale(data)
+      toggleAddCart();
+      break;
+    default:
+      console.log("There is some error here")
   }
-}
-renderFilteredProducts(data)
+}))

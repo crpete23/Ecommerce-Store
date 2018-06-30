@@ -1,5 +1,5 @@
 function toggleAddCart() {
-  $('.product-img').hover(function() {
+  $('.imgProd').hover(function() {
       $(this).find('.visible').toggleClass( "hidden" );
   });
 }
