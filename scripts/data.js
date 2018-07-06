@@ -1,3 +1,4 @@
+
 //This will hold ALL of our products. We could maybe add a key:value pair that is { filter: 'morty'} or
 //something to grab each product with the filter function
 
@@ -124,3 +125,4 @@ const products = [{
 
 // console.log(products[0].image);
 module.exports = products
+
