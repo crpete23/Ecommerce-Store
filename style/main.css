@@ -111,3 +111,9 @@ img.morty-half {
 img.currency {
   width: 28px;
 }
+
+.background-div {
+  background-image: url('../images/starry-night.png');
+  height: 150px;
+  color: white;
+}

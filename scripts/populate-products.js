@@ -50,10 +50,33 @@ function renderSale(data) {
   renderFilteredProducts(saleDataArr)
 }
 
+// PRICE FILTER FUNCTION RENDER
+function lowPrice(data) {
+  const lowPriceArr = data.filter(el => {
+    let price = Number(el.price.slice(1))
+    return price < 101
+  })
+  renderFilteredProducts(lowPriceArr)
+}
+
+
+function highPrice(data) {
+  const highPriceArr = data.filter(el => {
+    let price = Number(el.price.slice(1))
+    return price > 101
+  })
+  renderFilteredProducts(highPriceArr)
+}
+
+
 module.exports = {
   renderFilteredProducts,
   renderRick,
   renderMorty,
   renderTech,
-  renderSale
+  renderSale,
+  lowPrice,
+  
+  highPrice
+  
 }

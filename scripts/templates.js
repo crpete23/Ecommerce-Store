@@ -1,7 +1,3 @@
-//This is Diep's original HTML template for each product on the main html page. I just took out the unique info
-//and replaced it with object values to grab these values from the data objects as they are looped
-//using the .map in the main.js renderFilteredProducts function
-
 function populateProducts(product) {
 let productHtml =
 `<div class="col-3 products-page">

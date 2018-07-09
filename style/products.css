@@ -16,9 +16,13 @@ header {
 
 footer {
   position: relative;
-  height: 610px;
+  height: 400px;
   bottom: 0;
   width: 100%;
+}
+
+.div-stripe {
+  height: 20px;
 }
 /* product section */
 
@@ -116,6 +120,7 @@ img.currency {
 
 .list-products {
   margin-top: 50px;
+  height: 2000px;
 }
 
 .hidden {
@@ -144,4 +149,14 @@ img.currency {
 
 ul {
   list-style-type: none;
+}
+
+.background-div {
+  background-image: url('../images/starry-night.png');
+  height: 150px;
+  color: white;
+}
+
+body {
+  height: 100%;
 }
