@@ -95,6 +95,11 @@ img.morty-half {
   margin-bottom: 10px;
 }
 
+.products {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
 .products p span {
   font-weight: bold;
 }
@@ -113,7 +118,26 @@ img.currency {
 }
 
 .background-div {
-  background-image: url('../images/starry-night.png');
-  height: 150px;
+  background-image: url('../images/showme-resized.png');
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
   color: white;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.dark-grey-text {
+  font-size: 15px;
+  color: #282828;
+}
+
+
+.background-div .transbox {
+  background: rgba(0,0,0,0.6);
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px
 }

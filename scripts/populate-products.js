@@ -76,7 +76,5 @@ module.exports = {
   renderTech,
   renderSale,
   lowPrice,
-  
   highPrice
-  
 }
