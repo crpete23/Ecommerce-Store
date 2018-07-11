@@ -8,6 +8,12 @@ Technology used:
 * HTML, CSS & JavaScript
 * Boostrap
 
+Install this project:
+* Fork & Clone this repository
+* npm install
+
+This site is deployed at [rickmortyecommerce.surge.sh](https://www.rickmortyecommerce.surge.sh)
+
 Note: We are not affliated with the Rick & Morty show.
 
 ![Home Page](images/eco-rick.PNG)
