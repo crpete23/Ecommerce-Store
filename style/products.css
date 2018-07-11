@@ -24,6 +24,7 @@ footer {
 .div-stripe {
   height: 20px;
 }
+
 /* product section */
 
 .imgProd {
@@ -61,7 +62,6 @@ img.morty-half {
   position: relative;
 }
 
-
 .products .imgProd .visible a, .products .imgProd .visible a:visited, .products .imgProd .visible a:active, .products .imgProd .visible a:hover {
   color: black;
   text-decoration: none;
@@ -89,6 +89,10 @@ img.currency {
 }
 
 /* PRODUCT PAGE CSS */
+
+.products {
+  margin-top: 50px;
+}
 
 .products-page {
   margin: 0 auto;
@@ -120,7 +124,7 @@ img.currency {
 
 .list-products {
   margin-top: 50px;
-  height: 2000px;
+  margin-bottom: 100px;
 }
 
 .hidden {
@@ -146,17 +150,33 @@ img.currency {
   width: 100%;
 }
 
-
 ul {
   list-style-type: none;
 }
 
-.background-div {
-  background-image: url('../images/starry-night.png');
-  height: 150px;
-  color: white;
+.dark-grey-text {
+  font-size: 15px;
+  color: #282828;
 }
 
 body {
   height: 100%;
+}
+
+.background-div {
+  background-image: url('../images/showme-resized.png');
+  height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  color: white;
+  background-position: bottom;
+  background-size: cover;
+}
+.background-div .transbox {
+  background: rgba(0,0,0,0.6);
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 20px
 }
